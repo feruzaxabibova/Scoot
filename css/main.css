@@ -659,8 +659,8 @@ img {
   margin-bottom: 160px;
 }
 
-.careers-section__item {
-  width: 445px;
+.careers-section__inner:nth-child(3) {
+  padding-bottom: 307px;
 }
 
 .careers-section__inner:nth-child(even) {
@@ -668,6 +668,10 @@ img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.careers-section__item {
+  width: 445px;
 }
 
 .careers-section__item-image {
