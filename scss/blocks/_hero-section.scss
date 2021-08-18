@@ -1,0 +1,69 @@
+//HERO SECTION
+.hero-section {
+    height: 650px;
+    background: url(../../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F3B59;
+}
+
+.hero-section__wrapper {
+    padding-top: 153px;
+    width: 500px;
+}
+
+.hero-section__wrapper-title {
+    margin: 0;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+}
+
+.hero-section__wrapper-text {
+    margin: 40px 0; 
+    margin-left: 100px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.hero-section__wrapper-text::before {
+    width: 446px;
+    height: 138px;
+    display: block;
+    content: "";
+    background-image: url(../../images/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 446px 138px;
+    position: absolute;
+    margin-left: 450px;
+    top: 456px;
+}
+
+.hero-section__wrapper-text::after {
+    display: block;
+    content: "";
+    width: 202px;
+    height: 0;
+    border: 6.7px solid #FCB72B;
+    background-color: #fcb72b;
+    position: absolute;
+    top: 457px;
+    margin-left: -322px;
+}
+
+.site-button__hero {
+    @include button;
+    margin-left: 100px;
+}
+
+.site-button__hero:hover {
+    @include button-hover;
+}

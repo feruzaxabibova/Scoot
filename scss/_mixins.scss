@@ -1,0 +1,29 @@
+@mixin list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin button {
+  width: 180px;
+  height: 53px;
+  margin-left: auto;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #FCB72B;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+@mixin button-hover {
+  background-color: #fff;
+  color: #FCB72B;
+  border: 3px solid #FCB72B;
+  box-sizing: border-box;
+}
