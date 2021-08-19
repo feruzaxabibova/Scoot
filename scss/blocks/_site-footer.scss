@@ -5,8 +5,8 @@
     background-image: url(../../images/footer.png);
     background-repeat: no-repeat;
     background-size: 1153px 347px;
-    background-position: calc(50% - -335px) 137px;
-    // background-position: right -150px bottom -187px;
+    // background-position: calc(50% - -335px) 137px;
+    background-position: right -150px bottom -187px;
 }
 
 .site-footer__content {
@@ -38,4 +38,43 @@
 .content-link__image {
     width: 159px;
     height: 56px;
+}
+
+
+//RESPONSIVE
+
+@include breakpoint-down (950px) {
+    .site-footer__content {
+        display: block;
+        padding: 62px 0;
+    }
+    .site-footer__content-title {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .site-footer__content-link {
+        text-align: center;
+    }
+}
+
+@include breakpoint-down (575px) {
+    .site-footer__content-title {
+        width: 311px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .content-link__image {
+        width: 130px;
+        height: 40px;
+    }
+    .content-link__img ~ .content-link__img {
+        margin-left: 12px;
+    }
+}
+
+@include breakpoint-down (340px) {
+    .site-footer__content-title {
+        width: 295px;
+    }
 }

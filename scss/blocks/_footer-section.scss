@@ -57,3 +57,31 @@
     color: #E5ECF4;
 }
 
+
+
+//RESPONSIVE
+
+@include breakpoint-down (600px)  {
+    .footer-section__content {
+        flex-direction: column;
+        padding: 64px 0;
+    }
+    .footer-navbar__list {
+        margin-left: 0;
+        padding: 40px 0;
+    }
+    .footer-section__link {
+        margin: 0 auto;
+    }
+}
+@include breakpoint-down (400px) {
+    .footer-navbar__list {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 85px;
+    }
+    .footer-navbar__item {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
