@@ -62,8 +62,11 @@
 .site-button__hero {
     @include button;
     margin-left: 100px;
+    transition: background-color 0.4s ease;
 }
 
 .site-button__hero:hover {
-    @include button-hover;
+   background-color: transparent;
+   border: 3px solid #FCB72B;
+   box-sizing: border-box;
 }
