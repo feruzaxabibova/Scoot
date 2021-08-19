@@ -717,8 +717,6 @@ img {
   cursor: pointer;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
-  text-decoration: none;
-  padding: 14px 44px;
 }
 
 .careers-section__item-link:hover {
@@ -778,5 +776,82 @@ img {
 .content-link__image {
   width: 159px;
   height: 56px;
+}
+
+.footer-section {
+  background-color: #333A44;
+}
+
+.footer-section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 0;
+}
+
+.footer-section__logo {
+  width: 108px;
+  height: 28px;
+  display: block;
+}
+
+.footer-navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 58px;
+}
+
+.footer-navbar__item {
+  margin-right: 32px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.footer-navbar__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.footer-navbar__item-link {
+  text-decoration: none;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.footer-navbar__item-link:hover {
+  color: #FCB72B;
+}
+
+.footer-section__link {
+  margin-left: auto;
+}
+
+.footer-section__link-icon {
+  text-decoration: none;
+  margin-right: 24px;
+  font-size: 24px;
+  color: #FCB72B;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.footer-section__link-icon:nth-child(3) {
+  margin-right: 0;
+}
+
+.footer-section__link-icon:hover {
+  color: #E5ECF4;
 }
 /*# sourceMappingURL=main.css.map */

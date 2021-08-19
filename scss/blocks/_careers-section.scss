@@ -47,8 +47,6 @@
 
 .careers-section__item-link {
     @include button;
-    text-decoration: none;
-    padding: 14px 44px;
 }
 .careers-section__item-link:hover {
     @include button-hover;

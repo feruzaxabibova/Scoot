@@ -27,3 +27,18 @@
   border: 3px solid #FCB72B;
   box-sizing: border-box;
 }
+
+@mixin nav-link {
+  text-decoration: none;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  transition: all 0.4s ease;
+}
+
+@mixin nav-hover {
+  color: #FCB72B;
+}
