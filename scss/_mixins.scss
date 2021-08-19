@@ -42,3 +42,11 @@
 @mixin nav-hover {
   color: #FCB72B;
 }
+
+   
+//media   
+@mixin breakpoint-down ($screen-width) {
+  @media only screen and (max-width: $screen-width){
+    @content
+  }
+};

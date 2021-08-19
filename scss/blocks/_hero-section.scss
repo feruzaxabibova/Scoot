@@ -4,6 +4,7 @@
     background: url(../../images/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-color: #2F3B59;
 }
 
@@ -69,4 +70,75 @@
    background-color: transparent;
    border: 3px solid #FCB72B;
    box-sizing: border-box;
+}
+
+//RESPONSIVE    
+
+@include breakpoint-down (1100px) {
+    .hero-section__wrapper-text::after {
+        display: none;
+    }
+    .hero-section__wrapper-text::before {
+        margin-left: 220px;
+        top: 558px;
+    }
+}
+
+@include breakpoint-down (790px) {
+    .hero-section__wrapper {
+        width: 573px;
+        padding-top: 132px;
+        margin: auto;
+        text-align: center;
+    }
+    .hero-section__wrapper-text {
+        margin-top: 24px;
+        margin-bottom: 32px;
+        margin-left: 0;
+    }
+    .site-button__hero {
+        margin-left: 0;
+    }
+    .hero-section__wrapper-text::before {
+        margin-left: -216px;
+    }
+}
+
+@include breakpoint-down (620px) {
+    .hero-section__wrapper {
+        width: 520px;
+    }
+}
+
+@include breakpoint-down (550px) {
+    .hero-section__wrapper {
+        width: 420px;
+    }
+    .hero-section__wrapper-title {
+        font-size: 45px;
+        line-height: 50px;
+    }
+}
+
+@include breakpoint-down (450px) {
+    .hero-section__wrapper {
+        width: 311px;
+        padding-top: 115px;
+    }
+    .hero-section__wrapper-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .hero-section__wrapper-text {
+        margin-bottom: 34px;
+    }
+    .hero-section__wrapper-text::before {
+        margin-left: -342px;
+    }
+}
+
+@include breakpoint-down (330px) {
+    .hero-section__wrapper {
+        width: 280px;
+    }
 }

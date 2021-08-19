@@ -1,5 +1,6 @@
 // SITE-HEADER  
 .site-header {
+    width: 100%;    
     background-color: #fff;
 }
 
@@ -60,4 +61,26 @@
     display: none;
 }
 
+//RESPONSIVE
 
+@include breakpoint-down (650px) {
+    .navigation-navbar {
+        display: none;
+    }
+    .site-button {
+        display: none;
+    }
+    .site-button__burger {
+        display: block;
+    }
+    .site-header__navigation-logo {
+        margin: auto;
+    }
+}
+
+@include breakpoint-down (380px) {
+    .navigation-logo__image {
+        width: 75px;
+        height: 20px;
+    }
+}
