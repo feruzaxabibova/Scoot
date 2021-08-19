@@ -20,6 +20,54 @@
 
 .careers-section__item-image {
     width: 445px;
+    display: -webkit-inline-box;
+    position: relative;
+}
+
+.careers-section__item-image--img {
+    margin-right: 64px;
+}
+
+.careers-img__grey {
+    display: block;
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background-color: #E5ECF4;
+}
+
+.careers-img__grey-middle {
+    display: block;
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background-color: #E5ECF4;
+    margin-left: -516px;
+    margin-right: 64px;
+}
+
+.left-arrow {
+    width: 740px;
+    height: 150px;
+    position: absolute;
+    top: 149px;
+    margin-left: -41px;
+}
+
+.right-arrow {
+    width: 735px;
+    height: 138px;
+    position: absolute;
+    left: -255px;
+}
+
+.top-arrow {
+    width: 740px;
+    height: 150px;
+    position: absolute;
+    top: 149px;
+    top: -68px;
+    margin-left: 262px;
 }
 
 .careers-section__item-title {
