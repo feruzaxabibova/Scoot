@@ -1,8 +1,18 @@
 //SERVICES SECTION
+.services-section {
+    
+}
+
+.line {
+    background-image: url(../../images/hr.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 303px) 206px;
+}
+
 .services-section__list {
     @include list;
     display: flex;
-    padding-top: 296px;
+    padding-top: 160px;
     padding-bottom: 200px;
 }
 
@@ -23,19 +33,31 @@
     color: #495567;
 }
 
-.services-section__title::before {
-    display: block; 
-    content: "";
+.services-section__item-img {
     width: 96px;
     height: 96px;
-    background-image: url(../../images/mobile.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 39px 50px;
-    margin-bottom: 40px;
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FCB72B;
+    border-radius: 50%;
+    margin-bottom: 40px;
 }
+
+
+// .services-section__title::before {
+//     display: block; 
+//     content: "";
+//     width: 96px;
+//     height: 96px;
+//     background-image: url(../../images/mobile.svg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: 39px 50px;
+//     margin-bottom: 40px;
+//     border-radius: 50%;
+//     background-color: #FCB72B;
+// }
 
 .services-section__text {
     margin: 0;
